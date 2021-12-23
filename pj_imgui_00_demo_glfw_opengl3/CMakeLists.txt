@@ -24,7 +24,6 @@ add_executable(${ProjectName}
 )
 
 # For OpenGL
-# may need this (sudo apt-get install libglu1-mesa-dev  mesa-common-dev)
 find_package(OpenGL REQUIRED)
 target_link_libraries(${ProjectName} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
 target_link_libraries(${ProjectName} ${OPENGL_LIBRARIES})
